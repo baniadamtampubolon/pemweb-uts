@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+.myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+    
+.content {
+    border-radius: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 99%;
+    padding: 20px;
+}
+
+.topnav {
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    width: 100%;
+    color: #f1f1f1;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+.topnav a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f2f2f2;
+}
+
+.topnav .icon {
+    display: flex;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .myVideo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .myVideo {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+    body {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topnav a p {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;    
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topnav a p {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;    
+    }
+}
+
